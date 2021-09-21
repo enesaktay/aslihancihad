@@ -254,7 +254,6 @@ body {
 
 .thin-hr:before {
     font-family: 'FontAwesome';
-    content: "\f004";
     color: #C10E1F;
     position: absolute;
     width: 180px;
@@ -556,7 +555,6 @@ fieldset[disabled] .btn-primary.active {
 #headerwrap {
     background-color: #f3f3f3;
     overflow: hidden;
-    background-image: url('../img/bg/bgheart.jpg');
 }
 
 .opaque {
@@ -650,7 +648,7 @@ section {
 .dark-wrapper h5,
 .dark-wrapper h6,
 .dark-wrapper p,
-.dark-wrapper a, 
+.dark-wrapper a,
 .dark-wrapper {
     color: #f3f3f3
 }
@@ -710,7 +708,7 @@ section h3.section-subheading {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*  10 - HOVER CAPTIONS 
+/*  10 - HOVER CAPTIONS
 /*-----------------------------------------------------------------------------------*/
 
 .hover-item {
@@ -740,7 +738,7 @@ section h3.section-subheading {
     background: -ms-linear-gradient(top, rgba(0,0,0,0) 28%,rgba(0,0,0,0.75) 100%); /* IE10+ */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 28%,rgba(0,0,0,0.75) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-    text-align: center;    
+    text-align: center;
     text-shadow: 0 0 1px #000;
 }
 
@@ -1042,21 +1040,14 @@ footer.white-wrapper .social-links li a {
 /*-----------------------------------------------------------------------------------*/
 /*  15 - MAP
 /*-----------------------------------------------------------------------------------*/
-#mapwrapper {
+.mapwrapper {
     max-height: 230px;
     clear: both;
     position: relative;
     display: block;
 }
 
-#mapwrapper iframe {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: url(grayscale.svg); /* Firefox 4+ */
-    filter: gray; /* IE 6-9 */
+.mapwrapper iframe {
     max-width: 100%;
 }
 
@@ -1127,7 +1118,7 @@ footer.white-wrapper .social-links li a {
 
 .form-control:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #444;
     font-weight: 300;
     text-transform: uppercase;
@@ -1135,7 +1126,7 @@ footer.white-wrapper .social-links li a {
 
 .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #444;
     font-weight: 300;
     text-transform: uppercase;
@@ -1156,7 +1147,7 @@ footer.white-wrapper .social-links li a {
 
 .dark-wrapper .form-control:-moz-placeholder {
     /* Firefox 18- */
-    
+
     color: #f6f6f6;
     font-weight: 300;
     text-transform: uppercase;
@@ -1164,7 +1155,7 @@ footer.white-wrapper .social-links li a {
 
 .dark-wrapper .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     color: #f6f6f6;
     font-weight: 300;
     text-transform: uppercase;
@@ -1430,16 +1421,44 @@ footer.white-wrapper .social-links li a {
         width: 100% !important;
      }
      #when .lead{
-        font-size: 40px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2px;
+    }
+
+     .master-wrapper .navbar {
+        max-width: 100vw;
+     }
+
+    .a-quote,
+    #countdown {
+        font-size: 45px;
+    }
+
+    #when .lead {
+        font-size: 20px;
+    }
+
+    .col-md-12 .footer-goodbye {
+        font-size: 30px;
+    }
+
+    .parallax {
+        height: 400px;
+    }
+
+    #wedding-date .lead {
+        font-size: 22px;
+    }
+
+    footer.white-wrapper {
+        padding: 0;
     }
 }
 
 @media(max-width:460px) {
     .fullheight, .fullheight .article-slide, .fullheight .article-slide .carousel-inner, .fullheight .article-slide .item, .fullheight .article-slide .item img {
-        height: auto!important;
+        height: 100vh !important;
         min-height: 400px
     }
 }
