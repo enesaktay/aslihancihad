@@ -11,7 +11,8 @@
 /*  1 - FONT IMPORT
 /*-----------------------------------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);*/
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:100,400,300,700,800);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 
 /*-----------------------------------------------------------------------------------*/
@@ -20,7 +21,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'M PLUS 1p', "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #ffffff;
     font-weight: 400;
     line-height: 1.75;
@@ -28,7 +29,7 @@ body {
 }
 
 .heading-font, .navbar-default .navbar-brand, .navbar-default .nav li a {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'M PLUS 1p', "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
@@ -84,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'M PLUS 1p', "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px
@@ -292,7 +293,7 @@ body {
 /*  3 - BUTTONS
 /*-----------------------------------------------------------------------------------*/
 .btn {
-	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'M PLUS 1p', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .btn:focus,
@@ -608,6 +609,13 @@ header .intro-text .intro-heading {
     margin-bottom: 24px;
     font-size: 70px;
     line-height: 1
+}
+
+.intro-heading p {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 8px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1453,6 +1461,11 @@ footer.white-wrapper .social-links li a {
 
     footer.white-wrapper {
         padding: 0;
+    }
+
+    .intro-heading p {
+        font-size: 40px;
+        font-weight: 300;
     }
 }
 
