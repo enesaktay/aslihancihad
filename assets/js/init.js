@@ -235,7 +235,7 @@ $(document).ready(function(){
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("countdown-tr").innerHTML = days + "gn " + hours + "sa "
+        document.getElementById("countdown-tr").innerHTML = days + "g " + hours + "sa "
             + minutes + "dk " + seconds + "sn ";
 
         // If the count down is finished, write some text
