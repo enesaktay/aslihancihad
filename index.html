@@ -221,11 +221,11 @@
                     <form id="my-form" action="https://formspree.io/f/mqkwnyng" method="POST">
                         <div class="form-group col-md-6">
                             <label>Vorname:</label>
-                            <input type="text" name="name" class="form-control"/>
+                            <input type="text" name="name" class="form-control" required/>
                         </div>
                         <div class="form-group col-md-6">
                             <label>Nachname:</label>
-                            <input type="text" name="lastname" class="form-control"/>
+                            <input type="text" name="lastname" class="form-control" required/>
                         </div>
 
                         <div class="form-group col-md-6">
@@ -234,7 +234,7 @@
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="isthere" value="isthere" checked>
+                                    <input type="radio" name="isthere" value="isthere" required>
                                     Ich werde auf der Hochzeit anwesend sein.
                                 </label>
                             </div>
@@ -251,7 +251,7 @@
                                 <label>Wie viele Personen nimmst du mit?</label>
                             </div>
                             <label class="radio-inline">
-                                <input type="radio" name="amountpeople" value="0"> 0
+                                <input type="radio" name="amountpeople" value="0" required> 0
                             </label>
                             <label class="radio-inline">
                                 <input type="radio" name="amountpeople" value="1"> 1
@@ -278,7 +278,7 @@
                         </div>
 
                         <div class="checkbox col-md-12">
-                            <label><input type="checkbox" name="covidcheck"> Mir ist bekannt, dass ich nur zur Hochzeit kommen kann, wenn ich geimpft, genesen oder getestet bin (Schnelltest 24 Stunden oder PCR-Test 48 Stunden vorher).</label>
+                            <label><input type="checkbox" name="covidcheck" required> Mir ist bekannt, dass ich nur zur Hochzeit kommen kann, wenn ich geimpft, genesen oder getestet bin (Schnelltest 24 Stunden oder PCR-Test 48 Stunden vorher).</label>
                         </div>
                         <div class="col-md-12">
                             <button id="my-form-button" class="btn btn-primary mt30">Abschicken</button>
